@@ -13,14 +13,14 @@ public class Alumno {
     }
 
     public void setNombre(String nombre) throws AlumnosValuesExceptions {
-        if(nombre == null || nombre.trim().isEmpty()){
+        if (nombre == null || nombre.trim().isEmpty()) {
             throw new AlumnosValuesExceptions("El nombre del alumno puede estar vacío");
         }
         this.nombre = nombre;
     }
 
     public void setDni(String dni) throws AlumnosValuesExceptions {
-        if(dni == null || dni.trim().isEmpty()){
+        if (dni == null || dni.trim().isEmpty()) {
             throw new AlumnosValuesExceptions("El dni del alumno no puede estar vacío");
         }
         this.dni = dni;
@@ -28,10 +28,7 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return "Alumno{" +
-                "nombre='" + nombre + '\'' +
-                ", dni='" + dni + '\'' +
-                '}';
+        return "Alumno:" + nombre + "," + dni ;
     }
 
     @Override
